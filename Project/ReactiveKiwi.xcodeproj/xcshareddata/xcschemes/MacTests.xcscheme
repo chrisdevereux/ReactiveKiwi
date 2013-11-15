@@ -17,7 +17,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "61AB07BE180C17E70016BD41"
-               BuildableName = "Project-MacTests.octest"
+               BuildableName = "ReactiveKiwi-MacTests.octest"
                BlueprintName = "MacTests"
                ReferencedContainer = "container:ReactiveKiwi.xcodeproj">
             </BuildableReference>

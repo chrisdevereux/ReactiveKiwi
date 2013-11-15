@@ -12,11 +12,7 @@
 SPEC_BEGIN(RKWSignalMatcherSpec)
 
 describe(@"RKWSignalMatcher", ^{
-    __block RKWSignalMatcher *model;
-    
-    beforeEach(^{
-        model = [RKWSignalMatcher new];
-    });
+    registerMatchers(@"RKW");
     
     
 });
