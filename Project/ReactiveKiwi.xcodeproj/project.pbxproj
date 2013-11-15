@@ -1,0 +1,808 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61043832180C6C8100580A61 /* libKiwi-OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6104382B180C6C7300580A61 /* libKiwi-OSX.a */; };
+		61043833180C6C8600580A61 /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61043829180C6C7300580A61 /* libKiwi.a */; };
+		61AB079B180C17C70016BD41 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6117B996180B09A800B08CDC /* Cocoa.framework */; };
+		61AB07AF180C17D10016BD41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61AB07AE180C17D10016BD41 /* Foundation.framework */; };
+		61AB07C0180C17E70016BD41 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618D08191806F06F000C9D90 /* SenTestingKit.framework */; };
+		61AB07C1180C17E70016BD41 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6117B996180B09A800B08CDC /* Cocoa.framework */; };
+		61AB0801180C41250016BD41 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618D08191806F06F000C9D90 /* SenTestingKit.framework */; };
+		61AB0803180C41250016BD41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61AB0802180C41250016BD41 /* UIKit.framework */; };
+		61AB0804180C41250016BD41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61AB07AE180C17D10016BD41 /* Foundation.framework */; };
+		859110CE183696CA00CBE9D8 /* RKWSignalMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 859110CC183696CA00CBE9D8 /* RKWSignalMatcher.h */; };
+		859110CF183696CA00CBE9D8 /* RKWSignalMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 859110CD183696CA00CBE9D8 /* RKWSignalMatcher.m */; };
+		859110D0183696CA00CBE9D8 /* RKWSignalMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 859110CD183696CA00CBE9D8 /* RKWSignalMatcher.m */; };
+		859110F11836980B00CBE9D8 /* libReactiveKiwi-Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61AB079A180C17C70016BD41 /* libReactiveKiwi-Mac.a */; };
+		859111171836995D00CBE9D8 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8591110A1836995500CBE9D8 /* ReactiveCocoa.framework */; };
+		8591111C18369B6E00CBE9D8 /* RKWSignalMatcherSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 859110D41836970800CBE9D8 /* RKWSignalMatcherSpec.m */; };
+		8591111D18369B6F00CBE9D8 /* RKWSignalMatcherSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 859110D41836970800CBE9D8 /* RKWSignalMatcherSpec.m */; };
+		8591112218369C1E00CBE9D8 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8591110A1836995500CBE9D8 /* ReactiveCocoa.framework */; };
+		8591112318369C2B00CBE9D8 /* libReactiveKiwi-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61AB07AD180C17D10016BD41 /* libReactiveKiwi-iOS.a */; };
+		8591112418369C2B00CBE9D8 /* libReactiveCocoa-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8591110C1836995500CBE9D8 /* libReactiveCocoa-iOS.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		61043828180C6C7300580A61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6104381F180C6C7300580A61 /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F5015B9F11583A77002E9A98;
+			remoteInfo = Kiwi;
+		};
+		6104382A180C6C7300580A61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6104381F180C6C7300580A61 /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 832C83C7157263B300F160D5;
+			remoteInfo = "Kiwi-OSX";
+		};
+		6104382C180C6C7300580A61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6104381F180C6C7300580A61 /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F5015C9E11584017002E9A98;
+			remoteInfo = KiwiTests;
+		};
+		6104382E180C6C7300580A61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6104381F180C6C7300580A61 /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA084E7317E3838100592D5A;
+			remoteInfo = "Kiwi-XCTest";
+		};
+		61043830180C6C7300580A61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6104381F180C6C7300580A61 /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA084D3E17E3804200592D5A;
+			remoteInfo = KiwiXCTests;
+		};
+		859111091836995500CBE9D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859110FD1836995300CBE9D8 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88037F8315056328001A5B19;
+			remoteInfo = ReactiveCocoa;
+		};
+		8591110B1836995500CBE9D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859110FD1836995300CBE9D8 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88F440AB153DAC820097B4C3;
+			remoteInfo = "ReactiveCocoa-iOS";
+		};
+		8591110D1836995500CBE9D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859110FD1836995300CBE9D8 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88CDF7DC15000FCF00163A9F;
+			remoteInfo = ReactiveCocoaTests;
+		};
+		8591110F1836995500CBE9D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859110FD1836995300CBE9D8 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5FAF5223174D4C2000CAC810;
+			remoteInfo = "ReactiveCocoaTests-iOS";
+		};
+		859111111836995500CBE9D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859110FD1836995300CBE9D8 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1860F412177C91B500C7B3C9;
+			remoteInfo = "ReactiveCocoa-iOS-UIKitTestHost";
+		};
+		859111131836995500CBE9D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859110FD1836995300CBE9D8 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1860F430177C91B500C7B3C9;
+			remoteInfo = "ReactiveCocoa-iOS-UIKitTestHostTests";
+		};
+		859111151836995500CBE9D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859110FD1836995300CBE9D8 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D05AD39417F2D56F0080895B;
+			remoteInfo = "ReactiveCocoa-Mac";
+		};
+		85911118183699E200CBE9D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6104381F180C6C7300580A61 /* Kiwi.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 832C8323157263B300F160D5;
+			remoteInfo = "Kiwi-OSX";
+		};
+		8591111A183699E700CBE9D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6104381F180C6C7300580A61 /* Kiwi.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F5015B9E11583A77002E9A98;
+			remoteInfo = Kiwi;
+		};
+		8591111E18369C1400CBE9D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859110FD1836995300CBE9D8 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 88F440AA153DAC820097B4C3;
+			remoteInfo = "ReactiveCocoa-iOS";
+		};
+		8591112018369C1800CBE9D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859110FD1836995300CBE9D8 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 88037F8215056328001A5B19;
+			remoteInfo = ReactiveCocoa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		61AB07AB180C17D10016BD41 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6104381F180C6C7300580A61 /* Kiwi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kiwi.xcodeproj; path = ../Vendor/Kiwi/Kiwi.xcodeproj; sourceTree = "<group>"; };
+		6117B996180B09A800B08CDC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		618D08191806F06F000C9D90 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		61AB079A180C17C70016BD41 /* libReactiveKiwi-Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libReactiveKiwi-Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61AB079D180C17C70016BD41 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		61AB079E180C17C70016BD41 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		61AB079F180C17C70016BD41 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		61AB07AD180C17D10016BD41 /* libReactiveKiwi-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libReactiveKiwi-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61AB07AE180C17D10016BD41 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		61AB07BF180C17E70016BD41 /* ReactiveKiwi-MacTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveKiwi-MacTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61AB07F2180C186D0016BD41 /* iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		61AB07F4180C186D0016BD41 /* Mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mac-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		61AB07F5180C186D0016BD41 /* MacTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacTests-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		61AB07F6180C18830016BD41 /* MacTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacTests-Info.plist"; sourceTree = SOURCE_ROOT; };
+		61AB0800180C41250016BD41 /* ReactiveKiwi-iOSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveKiwi-iOSTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61AB0802180C41250016BD41 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		61AB0812180C41C30016BD41 /* iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSTests-Info.plist"; sourceTree = SOURCE_ROOT; };
+		61AB0813180C41C30016BD41 /* iOSTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSTests-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		61DE8E70180C648E0089318A /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		61DE8E71180C648E0089318A /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		61DE8E72180C648E0089318A /* iOS-Debug-CocoaPods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Debug-CocoaPods.xcconfig"; sourceTree = "<group>"; };
+		61DE8E73180C648E0089318A /* iOS-Release-CocoaPods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Release-CocoaPods.xcconfig"; sourceTree = "<group>"; };
+		61DE8E74180C648E0089318A /* iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iOS.xcconfig; sourceTree = "<group>"; };
+		61DE8E75180C648E0089318A /* iOSApp.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iOSApp.xcconfig; sourceTree = "<group>"; };
+		61DE8E76180C648E0089318A /* iOSTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iOSTests.xcconfig; sourceTree = "<group>"; };
+		61DE8E77180C648E0089318A /* Mac-Debug-CocoaPods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Debug-CocoaPods.xcconfig"; sourceTree = "<group>"; };
+		61DE8E78180C648E0089318A /* Mac-Release-CocoaPods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Release-CocoaPods.xcconfig"; sourceTree = "<group>"; };
+		61DE8E79180C648E0089318A /* Mac.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Mac.xcconfig; sourceTree = "<group>"; };
+		61DE8E7A180C648E0089318A /* MacApp.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = MacApp.xcconfig; sourceTree = "<group>"; };
+		61DE8E7B180C648E0089318A /* MacTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = MacTests.xcconfig; sourceTree = "<group>"; };
+		61DE8E7C180C648E0089318A /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		859110CC183696CA00CBE9D8 /* RKWSignalMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKWSignalMatcher.h; sourceTree = "<group>"; };
+		859110CD183696CA00CBE9D8 /* RKWSignalMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKWSignalMatcher.m; sourceTree = "<group>"; };
+		859110D41836970800CBE9D8 /* RKWSignalMatcherSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKWSignalMatcherSpec.m; sourceTree = "<group>"; };
+		859110FD1836995300CBE9D8 /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = ../External/ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61AB0797180C17C70016BD41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8591112218369C1E00CBE9D8 /* ReactiveCocoa.framework in Frameworks */,
+				61AB079B180C17C70016BD41 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61AB07AA180C17D10016BD41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61AB07AF180C17D10016BD41 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61AB07BB180C17E70016BD41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				859111171836995D00CBE9D8 /* ReactiveCocoa.framework in Frameworks */,
+				859110F11836980B00CBE9D8 /* libReactiveKiwi-Mac.a in Frameworks */,
+				61043832180C6C8100580A61 /* libKiwi-OSX.a in Frameworks */,
+				61AB07C0180C17E70016BD41 /* SenTestingKit.framework in Frameworks */,
+				61AB07C1180C17E70016BD41 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61AB07FC180C41250016BD41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8591112318369C2B00CBE9D8 /* libReactiveKiwi-iOS.a in Frameworks */,
+				8591112418369C2B00CBE9D8 /* libReactiveCocoa-iOS.a in Frameworks */,
+				61043833180C6C8600580A61 /* libKiwi.a in Frameworks */,
+				61AB0801180C41250016BD41 /* SenTestingKit.framework in Frameworks */,
+				61AB0803180C41250016BD41 /* UIKit.framework in Frameworks */,
+				61AB0804180C41250016BD41 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61043820180C6C7300580A61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61043829180C6C7300580A61 /* libKiwi.a */,
+				6104382B180C6C7300580A61 /* libKiwi-OSX.a */,
+				6104382D180C6C7300580A61 /* KiwiTests.octest */,
+				6104382F180C6C7300580A61 /* libKiwi-XCTest.a */,
+				61043831180C6C7300580A61 /* KiwiXCTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		618D07811806E6C5000C9D90 = {
+			isa = PBXGroup;
+			children = (
+				618D07AC1806E7D3000C9D90 /* Source */,
+				618D07AB1806E7CD000C9D90 /* Tests */,
+				618D07931806E6C6000C9D90 /* Targets */,
+				618D078C1806E6C6000C9D90 /* Frameworks */,
+				618D078B1806E6C6000C9D90 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		618D078B1806E6C6000C9D90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61AB079A180C17C70016BD41 /* libReactiveKiwi-Mac.a */,
+				61AB07AD180C17D10016BD41 /* libReactiveKiwi-iOS.a */,
+				61AB07BF180C17E70016BD41 /* ReactiveKiwi-MacTests.octest */,
+				61AB0800180C41250016BD41 /* ReactiveKiwi-iOSTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		618D078C1806E6C6000C9D90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				859110FD1836995300CBE9D8 /* ReactiveCocoa.xcodeproj */,
+				6104381F180C6C7300580A61 /* Kiwi.xcodeproj */,
+				6117B996180B09A800B08CDC /* Cocoa.framework */,
+				618D08191806F06F000C9D90 /* SenTestingKit.framework */,
+				61AB07AE180C17D10016BD41 /* Foundation.framework */,
+				61AB0802180C41250016BD41 /* UIKit.framework */,
+				61AB079C180C17C70016BD41 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		618D07931806E6C6000C9D90 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				61DE8E6E180C648E0089318A /* xcconfigs */,
+				61AB07F2180C186D0016BD41 /* iOS-Prefix.pch */,
+				61AB07F4180C186D0016BD41 /* Mac-Prefix.pch */,
+				61AB07F5180C186D0016BD41 /* MacTests-Prefix.pch */,
+				61AB0813180C41C30016BD41 /* iOSTests-Prefix.pch */,
+				61AB07F6180C18830016BD41 /* MacTests-Info.plist */,
+				61AB0812180C41C30016BD41 /* iOSTests-Info.plist */,
+			);
+			name = Targets;
+			path = Project;
+			sourceTree = "<group>";
+		};
+		618D07AB1806E7CD000C9D90 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				859110D41836970800CBE9D8 /* RKWSignalMatcherSpec.m */,
+			);
+			name = Tests;
+			path = ../Tests;
+			sourceTree = "<group>";
+		};
+		618D07AC1806E7D3000C9D90 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				859110CC183696CA00CBE9D8 /* RKWSignalMatcher.h */,
+				859110CD183696CA00CBE9D8 /* RKWSignalMatcher.m */,
+			);
+			name = Source;
+			path = ../Source;
+			sourceTree = "<group>";
+		};
+		61AB079C180C17C70016BD41 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61AB079D180C17C70016BD41 /* AppKit.framework */,
+				61AB079E180C17C70016BD41 /* CoreData.framework */,
+				61AB079F180C17C70016BD41 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		61DE8E6E180C648E0089318A /* xcconfigs */ = {
+			isa = PBXGroup;
+			children = (
+				61DE8E70180C648E0089318A /* Base.xcconfig */,
+				61DE8E71180C648E0089318A /* Debug.xcconfig */,
+				61DE8E72180C648E0089318A /* iOS-Debug-CocoaPods.xcconfig */,
+				61DE8E73180C648E0089318A /* iOS-Release-CocoaPods.xcconfig */,
+				61DE8E74180C648E0089318A /* iOS.xcconfig */,
+				61DE8E75180C648E0089318A /* iOSApp.xcconfig */,
+				61DE8E76180C648E0089318A /* iOSTests.xcconfig */,
+				61DE8E77180C648E0089318A /* Mac-Debug-CocoaPods.xcconfig */,
+				61DE8E78180C648E0089318A /* Mac-Release-CocoaPods.xcconfig */,
+				61DE8E79180C648E0089318A /* Mac.xcconfig */,
+				61DE8E7A180C648E0089318A /* MacApp.xcconfig */,
+				61DE8E7B180C648E0089318A /* MacTests.xcconfig */,
+				61DE8E7C180C648E0089318A /* Release.xcconfig */,
+			);
+			path = xcconfigs;
+			sourceTree = SOURCE_ROOT;
+		};
+		859110FE1836995300CBE9D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8591110A1836995500CBE9D8 /* ReactiveCocoa.framework */,
+				8591110C1836995500CBE9D8 /* libReactiveCocoa-iOS.a */,
+				8591110E1836995500CBE9D8 /* ReactiveCocoaTests.octest */,
+				859111101836995500CBE9D8 /* ReactiveCocoaTests-iOS.octest */,
+				859111121836995500CBE9D8 /* ReactiveCocoa-iOS-UIKitTestHost.app */,
+				859111141836995500CBE9D8 /* ReactiveCocoa-iOS-UIKitTestHostTests.octest */,
+				859111161836995500CBE9D8 /* libReactiveCocoa-Mac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		61AB0798180C17C70016BD41 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				859110CE183696CA00CBE9D8 /* RKWSignalMatcher.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		61AB0799180C17C70016BD41 /* Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61AB07A6180C17C70016BD41 /* Build configuration list for PBXNativeTarget "Mac" */;
+			buildPhases = (
+				61AB0796180C17C70016BD41 /* Sources */,
+				61AB0797180C17C70016BD41 /* Frameworks */,
+				61AB0798180C17C70016BD41 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8591112118369C1800CBE9D8 /* PBXTargetDependency */,
+				85911119183699E200CBE9D8 /* PBXTargetDependency */,
+			);
+			name = Mac;
+			productName = Mac;
+			productReference = 61AB079A180C17C70016BD41 /* libReactiveKiwi-Mac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		61AB07AC180C17D10016BD41 /* iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61AB07B7180C17D10016BD41 /* Build configuration list for PBXNativeTarget "iOS" */;
+			buildPhases = (
+				61AB07A9180C17D10016BD41 /* Sources */,
+				61AB07AA180C17D10016BD41 /* Frameworks */,
+				61AB07AB180C17D10016BD41 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8591111F18369C1400CBE9D8 /* PBXTargetDependency */,
+				8591111B183699E700CBE9D8 /* PBXTargetDependency */,
+			);
+			name = iOS;
+			productName = iOS;
+			productReference = 61AB07AD180C17D10016BD41 /* libReactiveKiwi-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		61AB07BE180C17E70016BD41 /* MacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61AB07CC180C17E70016BD41 /* Build configuration list for PBXNativeTarget "MacTests" */;
+			buildPhases = (
+				61AB07BA180C17E70016BD41 /* Sources */,
+				61AB07BB180C17E70016BD41 /* Frameworks */,
+				61AB07BC180C17E70016BD41 /* Resources */,
+				6104381D180C6AA800580A61 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacTests;
+			productName = MacTests;
+			productReference = 61AB07BF180C17E70016BD41 /* ReactiveKiwi-MacTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		61AB07FF180C41250016BD41 /* iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61AB080F180C41250016BD41 /* Build configuration list for PBXNativeTarget "iOSTests" */;
+			buildPhases = (
+				61AB07FB180C41250016BD41 /* Sources */,
+				61AB07FC180C41250016BD41 /* Frameworks */,
+				61AB07FD180C41250016BD41 /* Resources */,
+				61AB07FE180C41250016BD41 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSTests;
+			productName = iOSTests;
+			productReference = 61AB0800180C41250016BD41 /* ReactiveKiwi-iOSTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		618D07821806E6C6000C9D90 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = TouchFirst;
+			};
+			buildConfigurationList = 618D07851806E6C6000C9D90 /* Build configuration list for PBXProject "ReactiveKiwi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 618D07811806E6C5000C9D90;
+			productRefGroup = 618D078B1806E6C6000C9D90 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 61043820180C6C7300580A61 /* Products */;
+					ProjectRef = 6104381F180C6C7300580A61 /* Kiwi.xcodeproj */;
+				},
+				{
+					ProductGroup = 859110FE1836995300CBE9D8 /* Products */;
+					ProjectRef = 859110FD1836995300CBE9D8 /* ReactiveCocoa.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				61AB0799180C17C70016BD41 /* Mac */,
+				61AB07AC180C17D10016BD41 /* iOS */,
+				61AB07BE180C17E70016BD41 /* MacTests */,
+				61AB07FF180C41250016BD41 /* iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		61043829180C6C7300580A61 /* libKiwi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKiwi.a;
+			remoteRef = 61043828180C6C7300580A61 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6104382B180C6C7300580A61 /* libKiwi-OSX.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libKiwi-OSX.a";
+			remoteRef = 6104382A180C6C7300580A61 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6104382D180C6C7300580A61 /* KiwiTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KiwiTests.octest;
+			remoteRef = 6104382C180C6C7300580A61 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6104382F180C6C7300580A61 /* libKiwi-XCTest.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libKiwi-XCTest.a";
+			remoteRef = 6104382E180C6C7300580A61 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		61043831180C6C7300580A61 /* KiwiXCTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KiwiXCTests.xctest;
+			remoteRef = 61043830180C6C7300580A61 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8591110A1836995500CBE9D8 /* ReactiveCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveCocoa.framework;
+			remoteRef = 859111091836995500CBE9D8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8591110C1836995500CBE9D8 /* libReactiveCocoa-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReactiveCocoa-iOS.a";
+			remoteRef = 8591110B1836995500CBE9D8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8591110E1836995500CBE9D8 /* ReactiveCocoaTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ReactiveCocoaTests.octest;
+			remoteRef = 8591110D1836995500CBE9D8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		859111101836995500CBE9D8 /* ReactiveCocoaTests-iOS.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ReactiveCocoaTests-iOS.octest";
+			remoteRef = 8591110F1836995500CBE9D8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		859111121836995500CBE9D8 /* ReactiveCocoa-iOS-UIKitTestHost.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "ReactiveCocoa-iOS-UIKitTestHost.app";
+			remoteRef = 859111111836995500CBE9D8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		859111141836995500CBE9D8 /* ReactiveCocoa-iOS-UIKitTestHostTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ReactiveCocoa-iOS-UIKitTestHostTests.octest";
+			remoteRef = 859111131836995500CBE9D8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		859111161836995500CBE9D8 /* libReactiveCocoa-Mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReactiveCocoa-Mac.a";
+			remoteRef = 859111151836995500CBE9D8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61AB07BC180C17E70016BD41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61AB07FD180C41250016BD41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6104381D180C6AA800580A61 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"";
+		};
+		61AB07FE180C41250016BD41 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61AB0796180C17C70016BD41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				859110CF183696CA00CBE9D8 /* RKWSignalMatcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61AB07A9180C17D10016BD41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				859110D0183696CA00CBE9D8 /* RKWSignalMatcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61AB07BA180C17E70016BD41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8591111D18369B6F00CBE9D8 /* RKWSignalMatcherSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61AB07FB180C41250016BD41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8591111C18369B6E00CBE9D8 /* RKWSignalMatcherSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85911119183699E200CBE9D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Kiwi-OSX";
+			targetProxy = 85911118183699E200CBE9D8 /* PBXContainerItemProxy */;
+		};
+		8591111B183699E700CBE9D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kiwi;
+			targetProxy = 8591111A183699E700CBE9D8 /* PBXContainerItemProxy */;
+		};
+		8591111F18369C1400CBE9D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ReactiveCocoa-iOS";
+			targetProxy = 8591111E18369C1400CBE9D8 /* PBXContainerItemProxy */;
+		};
+		8591112118369C1800CBE9D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReactiveCocoa;
+			targetProxy = 8591112018369C1800CBE9D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		618D07A51806E6C6000C9D90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61DE8E71180C648E0089318A /* Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		618D07A61806E6C6000C9D90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61DE8E7C180C648E0089318A /* Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		61AB07A7180C17C70016BD41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61DE8E79180C648E0089318A /* Mac.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		61AB07A8180C17C70016BD41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61DE8E79180C648E0089318A /* Mac.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		61AB07B8180C17D10016BD41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61DE8E74180C648E0089318A /* iOS.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		61AB07B9180C17D10016BD41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61DE8E74180C648E0089318A /* iOS.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		61AB07CD180C17E70016BD41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61DE8E7B180C648E0089318A /* MacTests.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		61AB07CE180C17E70016BD41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61DE8E7B180C648E0089318A /* MacTests.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		61AB0810180C41250016BD41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61DE8E76180C648E0089318A /* iOSTests.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		61AB0811180C41250016BD41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61DE8E76180C648E0089318A /* iOSTests.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		618D07851806E6C6000C9D90 /* Build configuration list for PBXProject "ReactiveKiwi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				618D07A51806E6C6000C9D90 /* Debug */,
+				618D07A61806E6C6000C9D90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61AB07A6180C17C70016BD41 /* Build configuration list for PBXNativeTarget "Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61AB07A7180C17C70016BD41 /* Debug */,
+				61AB07A8180C17C70016BD41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61AB07B7180C17D10016BD41 /* Build configuration list for PBXNativeTarget "iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61AB07B8180C17D10016BD41 /* Debug */,
+				61AB07B9180C17D10016BD41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61AB07CC180C17E70016BD41 /* Build configuration list for PBXNativeTarget "MacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61AB07CD180C17E70016BD41 /* Debug */,
+				61AB07CE180C17E70016BD41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61AB080F180C41250016BD41 /* Build configuration list for PBXNativeTarget "iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61AB0810180C41250016BD41 /* Debug */,
+				61AB0811180C41250016BD41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 618D07821806E6C6000C9D90 /* Project object */;
+}
