@@ -11,4 +11,5 @@
 
 @interface RKWSignalMatcher : KWMatcher
 - (void)complete;
+- (void)send:(id)value;
 @end

@@ -24,6 +24,16 @@ describe(@"RKWSignalMatcher", ^{
             [[[RACSignal never] shouldNot] complete];
         });
     });
+    
+    describe(@"-send:", ^{
+        it(@"should match when value is sent", ^{
+            [[[RACSignal return:@"foo"] should] send:@"foo"];
+        });
+        
+        it(@"should not match when value is not sent", ^{
+            [[[RACSignal empty] shouldNot] send:@"foo"];
+        });
+    });
 });
 
 SPEC_END

@@ -459,7 +459,7 @@
 		618D07821806E6C6000C9D90 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = TouchFirst;
 			};
 			buildConfigurationList = 618D07851806E6C6000C9D90 /* Build configuration list for PBXProject "ReactiveKiwi" */;

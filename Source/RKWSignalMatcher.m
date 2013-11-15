@@ -10,11 +10,43 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface RKWSignalMatcher ()
-@property (nonatomic) enum {Waiting, Failed, Completed} status;
+@property (nonatomic) enum {Active, Failed, Completed} status;
 @property (strong, nonatomic) NSError *error;
+@property (strong, nonatomic) NSMutableArray *values;
 @end
 
-@implementation RKWSignalMatcher
+@implementation RKWSignalMatcher {
+    BOOL(^_block)(RKWSignalMatcher *matcher);
+    NSString *_description;
+}
+
+#pragma mark - Nil-handling:
+
+static inline NSObject *
+NilPlaceholder(void)
+{
+    static NSObject *placeholder;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        placeholder = [NSObject new];
+    });
+    return placeholder;
+}
+
+static inline NSObject *
+PackValue(NSObject *x) 
+{
+    return x ? x : NilPlaceholder();
+}
+
+static inline NSObject *
+UnpackValue(NSObject *x) 
+{
+    return (x == NilPlaceholder()) ? nil : x;
+}
+
+
+#pragma mark - KWMatcher:
 
 + (BOOL)canMatchSubject:(id)anObject
 {
@@ -26,8 +58,12 @@
     self = [super initWithSubject:anObject];
     if (!self)
         return nil;
+
+    _values = [NSMutableArray new];
     
-    [anObject subscribeError:^(NSError *error) {
+    [anObject subscribeNext:^(id x) {
+        [self.values addObject:PackValue(x)];
+    } error:^(NSError *error) {
         self.error = error;
         self.status = Failed;
     } completed:^{
@@ -37,38 +73,49 @@
     return self;
 }
 
-+ (NSArray *)matcherStrings
-{
-    return @[@"complete"];
-}
-
-- (void)complete
-{
-    
-}
-
 - (BOOL)evaluate
 {
-    return self.status == Completed;
+    NSAssert(_block != nil, @"No block defined by matcher '%@'", self);
+    return _block(self);
 }
 
 - (NSString *)failureMessageForShould
 {
-    if (self.status == Failed) {
-        return [NSString stringWithFormat:@"expected signal to complete, but raised error: %@", self.error];
-    } else {
-        return @"expected signal to complete, but did not";
-    }
+    return [NSString stringWithFormat:@"expected signal to %@", _description];
 }
 
 - (NSString *)failureMessageForShouldNot
 {
-    return @"expected signal not to complete, but signal completed";
+    return [NSString stringWithFormat:@"expected signal not to %@", _description];
 }
 
 - (NSString *)description
 {
-    return @"complete";
+    return _description;
+}
+
+
+#pragma mark - Signal matchers:
+
++ (NSArray *)matcherStrings
+{
+    return @[@"complete", @"send:"];
+}
+
+- (void)complete
+{
+    _description = @"complete";
+    _block = ^BOOL(RKWSignalMatcher *self) {
+        return self.status == Completed;
+    };
+}
+
+- (void)send:(id)value
+{
+    _description = [NSString stringWithFormat:@"send %@", value];
+    _block = ^BOOL(RKWSignalMatcher *self) {
+        return [self.values containsObject:PackValue(value)];
+    };
 }
 
 @end
